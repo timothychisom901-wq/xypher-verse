@@ -188,7 +188,7 @@ button {
 
         ),
 
-        url("images/home.png");
+        url("https://i.ibb.co/dsWHQxwH/home.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -477,557 +477,295 @@ background 0.3s ease,
 ========================================================= */
 
 .menu-backdrop {
-
     position: fixed;
-
     inset: 0;
-
     background:
-
         rgba(0, 0, 0, 0.68);
-
     opacity: 0;
-
     visibility: hidden;
-
     transition:
-
         opacity 0.3s ease,
-
         visibility 0.3s ease;
-
     z-index: 998;
-
 }
 
 .menu-backdrop.active {
-
     opacity: 1;
-
     visibility: visible;
-
 }
 
 /* =========================================================
-
    HERO
-
 ========================================================= */
 
 .header-text {
-
     position: relative;
-
     z-index: 2;
-
     max-width: 760px;
-
     padding-top: 70px;
-
 }
 
 .hero-label {
-
     color: #dddddd;
-
     font-size: 15px;
-
     line-height: 1.8;
-
     margin-bottom: 22px;
-
     position: relative;
-
     padding-left: 42px;
-
     letter-spacing: 0.2px;
-
 }
 
 .hero-label::before {
-
     content: "";
-
     position: absolute;
-
     left: 0;
-
     top: 12px;
-
     width: 28px;
-
     height: 2px;
-
     background:
-
         var(--primary);
-
 }
 
 .header-text h1 {
-
     font-family:
-
         var(--heading-font);
-
     font-size:
-
         clamp(
-
             48px,
-
             6vw,
-
             78px
-
         );
-
     line-height: 1.02;
-
     letter-spacing: -3px;
-
     font-weight: 700;
 
 }
 
 .header-text h1 span {
-
     color:
-
         var(--primary);
-
 }
 
 .hero-description {
-
     max-width: 600px;
-
     color: #b5b5b5;
-
     line-height: 1.8;
-
     font-size: 15px;
-
     margin-top: 27px;
-
 }
 
 /* =========================================================
-
    HERO BUTTONS
-
 ========================================================= */
-
 .hero-buttons {
-
     display: flex;
-
     align-items: center;
-
     gap: 28px;
-
     margin-top: 35px;
-
     flex-wrap: wrap;
-
 }
-
 .hero-btn {
-
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 13px;
-
     background:
-
         var(--primary);
-
     color: #ffffff;
-
     padding: 15px 24px;
-
     border-radius: 4px;
-
     font-size: 14px;
-
     font-weight: 600;
-
     transition:
-
         transform 0.3s ease,
-
 background 0.3s ease;
-
 }
-
 .hero-btn:hover {
-
     background:
-
         #e60047;
-
     transform:
-
         translateY(-3px);
-
 }
-
 .hero-btn i {
-
     transition:
-
         transform 0.3s ease;
-
 }
-
 .hero-btn:hover i {
-
     transform:
-
         translateX(5px);
-
 }
-
 .hero-secondary {
-
     font-size: 14px;
-
     color: #ffffff;
-
     position: relative;
-
     padding-bottom: 7px;
-
 }
-
 .hero-secondary::after {
-
     content: "";
-
     position: absolute;
-
     left: 0;
-
     bottom: 0;
-
     width: 100%;
-
     height: 1px;
-
     background:
-
         var(--primary);
-
 }
 
 /* =========================================================
-
    SECTIONS
-
 ========================================================= */
-
 section {
-
     padding: 110px 0;
-
     position: relative;
-
 }
-
 .section-heading {
-
     max-width: 720px;
-
     margin-bottom: 55px;
-
 }
-
 .section-label {
-
     display: inline-block;
-
     color:
-
         var(--primary);
-
     font-size: 12px;
-
     font-weight: 600;
-
     letter-spacing: 2.2px;
-
     margin-bottom: 15px;
-
 }
-
 .sub-title {
-
     font-family:
-
         var(--heading-font);
-
     font-size:
-
         clamp(
-
             36px,
-
             5vw,
-
             56px
-
         );
-
     line-height: 1.05;
-
     letter-spacing: -2px;
-
     font-weight: 600;
-
 }
-
 .section-heading p {
-
     color:
-
         var(--muted);
-
     margin-top: 20px;
-
     line-height: 1.8;
-
     font-size: 15px;
-
 }
-
 /* =========================================================
-
    ABOUT
-
 ========================================================= */
-
 #About {
-
     background:
-
         #080808;
-
 }
-
 .row {
-
     display: flex;
-
     justify-content: space-between;
-
     gap: 80px;
-
 }
 
 .About-col-1 {
-
     flex:
-
         0 0 42%;
-
     min-width: 0;
-
 }
-
 .About-col-2 {
-
     flex: 1;
-
     min-width: 0;
-
 }
-
 .about-image {
-
     height: 650px;
-
     overflow: hidden;
-
     position: relative;
-
     border:
-
         1px solid
-
         var(--border);
-
 }
 
 .about-image::after {
-
     content: "";
-
     position: absolute;
-
     inset: 0;
-
     background:
-
         linear-gradient(
-
             135deg,
-
             rgba(255, 0, 79, 0.12),
-
             transparent 45%
-
         );
-
     pointer-events: none;
-
 }
-
 .about-image img {
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     transition:
-
         transform 0.7s ease;
-
 }
-
 .about-image:hover img {
-
     transform:
-
         scale(1.03);
-
 }
-
 .About-col-2 > p {
-
     color:
-
         var(--muted);
-
     line-height: 1.85;
-
     font-size: 14px;
-
     margin-top: 20px;
-
     max-width: 650px;
-
 }
 
 /* =========================================================
-
    TABS
-
 ========================================================= */
-
 .tab-title {
-
     display: flex;
-
     gap: 32px;
-
     margin-top: 40px;
-
     border-bottom:
-
         1px solid
-
         var(--border);
-
 }
-
 .tab-links {
-
     background: none;
-
     color: #888888;
-
     cursor: pointer;
-
     font-size: 14px;
-
     padding-bottom: 13px;
-
     position: relative;
-
     transition:
-
         color 0.3s ease;
-
 }
-
 .tab-links.active-link {
-
     color: #ffffff;
-
 }
-
 .tab-links::after {
-
     content: "";
-
     position: absolute;
-
     left: 0;
-
     bottom: -1px;
-
     width: 0;
-
     height: 2px;
-
     background:
-
         var(--primary);
-
     transition:
-
         width 0.3s ease;
-
 }
-
 .tab-links.active-link::after {
-
     width: 100%;
-
 }
-
 .tab-contents {
-
     display: none;
-
     margin-top: 30px;
-
     animation:
-
         tabFade 0.4s ease;
-
 }
-
 .tab-contents.active-tab {
-
     display: block;
-
 }
-
 .tab-contents ul {
-
     list-style: none;
-
 }
-
 .tab-contents li {
-
     color:
 
         var(--muted);
@@ -2687,39 +2425,20 @@ background 0.3s ease,
         gap:
 
             45px;
-
     }
-
-
-
     .About-col-1 {
-
         flex-basis:
-
             38%;
-
     }
-
-
-
     .about-image {
 
         height:
-
             520px;
-
     }
-
-
-
     .contact-wrapper {
-
         gap:
-
             45px;
-
     }
-
 }
 
 
@@ -2727,9 +2446,7 @@ background 0.3s ease,
 
 
 /* =========================================================
-
    MOBILE
-
 ========================================================= */
 
 @media (max-width: 700px) {
