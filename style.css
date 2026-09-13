@@ -2183,161 +2183,17 @@ background 0.3s ease,
 }
 
 
-
-
-
 /* =========================================================
-
-   SCROLL REVEAL
-
+   CONTENT VISIBILITY
 ========================================================= */
 
-.reveal {
-
-    opacity:
-
-        0;
-
-    transform:
-
-        translateY(28px);
-
-    transition:
-
-        opacity 0.75s ease,
-
-        transform 0.75s
-
-        cubic-bezier(
-
-            0.22,
-
-            1,
-
-            0.36,
-
-            1
-
-        );
-
-}
-
-
-
+/* All website content is visible immediately */
+.reveal,
 .reveal.show {
-
-    opacity:
-
-        1;
-
-    transform:
-
-        translateY(0);
-
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
-
-
-
-
-
-/* =========================================================
-
-   STAGGER
-
-========================================================= */
-
-.services-list .reveal:nth-child(2),
-
-.approach-list .reveal:nth-child(2),
-
-.client-types .reveal:nth-child(2),
-
-.work-list .reveal:nth-child(2) {
-
-    transition-delay:
-
-        0.06s;
-
-}
-
-
-
-.services-list .reveal:nth-child(3),
-
-.approach-list .reveal:nth-child(3),
-
-.client-types .reveal:nth-child(3),
-
-.work-list .reveal:nth-child(3) {
-
-    transition-delay:
-
-        0.12s;
-
-}
-
-
-
-.services-list .reveal:nth-child(4),
-
-.approach-list .reveal:nth-child(4),
-
-.client-types .reveal:nth-child(4),
-
-.work-list .reveal:nth-child(4) {
-
-    transition-delay:
-
-        0.18s;
-
-}
-
-
-
-.approach-list .reveal:nth-child(5),
-
-.client-types .reveal:nth-child(5) {
-
-    transition-delay:
-
-        0.24s;
-
-}
-
-
-
-.approach-list .reveal:nth-child(6),
-
-.client-types .reveal:nth-child(6) {
-
-    transition-delay:
-
-        0.30s;
-
-}
-
-
-
-.approach-list .reveal:nth-child(7) {
-
-    transition-delay:
-
-        0.36s;
-
-}
-
-
-
-.approach-list .reveal:nth-child(8) {
-
-    transition-delay:
-
-        0.42s;
-
-}
-
-
-
 
 
 /* =========================================================
